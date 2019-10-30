@@ -4,7 +4,7 @@
 
 // Déclarer les variables
 
-document.querySelector('button').addEventListener('click' , function verification(){
+document.querySelector('button').addEventListener('click' , function(){
 let password = document.getElementById('password');
 let confirmPassword = document.getElementById('confirmPassword');
 
@@ -12,6 +12,8 @@ let confirmPassword = document.getElementById('confirmPassword');
   if(password.value == confirmPassword.value){
     password.style.border = '3px solid green';
     confirmPassword.style.border = '3px solid green';
+    // Possibilité d'utiliser la propriété "style.borderColor",
+    // il faut supprimer "3px solid" et juste préciser la couleur
   }
   else{
     password.style.border = '3px solid red';
